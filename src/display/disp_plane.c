@@ -7,7 +7,7 @@
 
 #include "include.h"
 
-void print_p_hitbox(plane_t *plane, ctx_t *ctx)
+void my_print_p_hitbox(plane_t *plane, ctx_t *ctx)
 {
 	sfRectangleShape_setPosition(plane->hitbox, plane->pos);
 	sfRenderWindow_drawRectangleShape(ctx->window, plane->hitbox, NULL);

@@ -64,11 +64,11 @@ void my_load_game(char **av, ctx_t *ctx)
 		my_putstr("error: could not load file\n");
 		return;
 	}
-	plane = my_init_planes(str);
+	plane = init_planes(str);
 	if (plane == NULL)
 		return;
-	tower = my_init_towers(str);
-	zone = my_init_zone(str);
+	tower = init_towers(str);
+	zone = init_zone(str);
 	my_open_game(ctx, plane, tower, zone);
 	my_destroy_structs(plane, tower, zone);
 }

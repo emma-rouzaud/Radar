@@ -18,9 +18,9 @@ sfConvexShape *create_z_hitbox(char *str, int total)
 
 	sfConvexShape_setPointCount(shape, total / 2);
 	while (i < total / 2) {
-		move_i(str, &j);
+		my_move_i(str, &j);
 		x = my_getnbr(str, &j);
-		move_i(str, &j);
+		my_move_i(str, &j);
 		y = my_getnbr(str, &j);
 		sfConvexShape_setPoint(shape, i, (sfVector2f){x, y});
 		i++;;
