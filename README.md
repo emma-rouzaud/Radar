@@ -1,0 +1,2 @@
+# Radar
+Air traffic simulator. Graphical program that loads a map from informations found in a text file given as argument. Planes spawn at a given spot at a given time and travel at a given speed to a given destination. Plane speed can be modified if they are within a given distance of towers to avoid collisions with other aircrafts. The program must be able to handle collisions between squares (planes) and other squares (other planes) or any given convex shape (danger zones) and prevent as much as possible collisions.
